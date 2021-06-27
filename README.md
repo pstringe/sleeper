@@ -39,7 +39,7 @@ npm run start
 
 <img width="1113" alt="Screen Shot 2021-06-27 at 3 38 25 PM" src="https://user-images.githubusercontent.com/26946125/123561561-e80c9080-d75d-11eb-9c52-f7be46fb8622.png">
 
-# Prorities for future implementation
+# Prorities For Future Implementation
 1. Group messages from the same user
 2. Mock out incoming messages
 3. Enhance user experience
