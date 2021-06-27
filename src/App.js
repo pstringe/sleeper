@@ -15,7 +15,6 @@ class Message {
 }
 
 function App() {
-  
   const [group, setGroup] = useState({
     users: [
         {userID: 'John'},
