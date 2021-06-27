@@ -2,6 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Group from './Components/Group';
 
+class Message {
+  constructor (user=null, text='', attatchments=[]){
+    this.userID = user;
+    this.content = {
+      text,
+      attatchments
+    }
+    this.timestamp = Date.now();
+  }
+}
+
 function App() {
   const groups = [
     {

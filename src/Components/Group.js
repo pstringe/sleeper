@@ -4,9 +4,6 @@ import {
 } from '@material-ui/core';
 import MessageList from './MessageList';
 
-
-
-
 const Group = ({group}) => {
 
     return ( 
