@@ -1,23 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
+import Group from './Components/Group';
 
 function App() {
+  const groups = [
+    {
+        GroupID: 0,
+        users: [
+            {userID: 'John'},
+            {userID: 'Jane'}
+        ],
+        messages: [
+            {
+              userID: 'John', 
+              content: {
+                text: 'message1 from john', 
+                attatchments: []
+              }, 
+              timestamp: 0
+            },
+            {
+              userID: 'Jane', 
+              content: {
+                text: 'message2 from jane', 
+                attatchments: []
+              },
+              timestamp: 1
+            }
+        ],
+    }
+]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Group group={groups[0]}/>
     </div>
   );
 }
