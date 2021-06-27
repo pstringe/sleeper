@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Basic Chat App Sleeper Takehome
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Installation
 
-## Available Scripts
+```
+git clone https://github.com/pstringe/sleeper.git
+npm install
+npm run start
+```
 
-In the project directory, you can run:
+# Usage
+* The Logged in user, 'John' is greeted by simple screen showing past messages.
+* Click inside the text box, type some text and press enter to submit a new message
+* Click the GIF button to select a trending gif to attatch to the message. Attatched gifs will show beneath the text input
+* Press enter to submit a message with attatched GIFs
 
-### `yarn start`
+# Time Breakdown (2h 25m)
+- Project Setup (10m)
+- Project Planning (20m)
+- Component Skeleton + minimal styling (1h)
+- Retrieve data from Giphy (15m)
+- Develop Gif selection component (30m)
+- show gifs on messages (10m)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Data Model
+<img width="269" alt="Screen Shot 2021-06-27 at 3 34 23 PM" src="https://user-images.githubusercontent.com/26946125/123561453-3a997d00-d75d-11eb-994a-68d2bf608906.png">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Component Hierarchy
+<img width="358" alt="Screen Shot 2021-06-27 at 3 35 59 PM" src="https://user-images.githubusercontent.com/26946125/123561488-661c6780-d75d-11eb-8c84-478f2f2b1271.png">
 
-### `yarn test`
+# Screenshots
+<img width="1113" alt="Screen Shot 2021-06-27 at 3 37 29 PM" src="https://user-images.githubusercontent.com/26946125/123561544-d0cda300-d75d-11eb-92e2-529c5cf557e7.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1113" alt="Screen Shot 2021-06-27 at 3 37 41 PM" src="https://user-images.githubusercontent.com/26946125/123561549-d4f9c080-d75d-11eb-8373-09bd4df3442c.png">
 
-### `yarn build`
+<img width="1113" alt="Screen Shot 2021-06-27 at 3 37 54 PM" src="https://user-images.githubusercontent.com/26946125/123561551-dc20ce80-d75d-11eb-9d16-33ad7d62d069.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1113" alt="Screen Shot 2021-06-27 at 3 38 09 PM" src="https://user-images.githubusercontent.com/26946125/123561555-e216af80-d75d-11eb-99b7-03362cbc9361.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="1113" alt="Screen Shot 2021-06-27 at 3 38 25 PM" src="https://user-images.githubusercontent.com/26946125/123561561-e80c9080-d75d-11eb-9c52-f7be46fb8622.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Prorities for future implementation
+1. Group messages from the same user
+2. Mock out incoming messages
+3. Enhance user experience
