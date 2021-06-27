@@ -3,13 +3,14 @@ import {
     Typography
 } from '@material-ui/core';
 import MessageList from './MessageList';
+import MessageCompose from './MessageCompose';
 
-const Group = ({group}) => {
-
+const Group = ({group, newMessage}) => {
     return ( 
-    <Grid container xs={12}>
-        <MessageList messages={group.messages}/>
-    </Grid> 
+        <Grid container item xs={12}>
+            <MessageList messages={group.messages}/>
+            <MessageCompose newMessage={newMessage}/>
+        </Grid> 
     );
 }
  

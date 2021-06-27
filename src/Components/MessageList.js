@@ -6,10 +6,10 @@ import {
 const MessageList = ({messages}) => {
 
     return (
-        <Grid item container>
-            {messages.map((message) => {
+        <Grid item container direction='column'>
+            {messages.map((message, idx) => {
                 return (
-                    <Typography>{message.content.text}</Typography>
+                    <Typography key={idx}>{message.content.text}</Typography>
                 );
             })}
         </Grid>
