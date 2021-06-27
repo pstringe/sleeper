@@ -26,7 +26,7 @@ const MessageCompose = ({newMessage}) => {
 
     return (
         <Grid item container justify='center'>
-            <form onSubmit={(e) => submit(e)}> 
+            <form onSubmit={(e) => submit(e)}>
                 <Input
                     value={messageText}
                     onChange={(e) => updateMessageText(e.target.value)}

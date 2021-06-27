@@ -9,14 +9,14 @@ class Message {
       this.content = {
           text,
           attatchments,
-          timestamp: Date.now()
-      }
+      };
+      this.timestamp = new Date(Date.now());
   }
 }
 
 function App() {
+  
   const [group, setGroup] = useState({
-    GroupID: 0,
     users: [
         {userID: 'John'},
         {userID: 'Jane'}
@@ -28,7 +28,7 @@ function App() {
             text: 'message1 from john', 
             attatchments: []
           }, 
-          timestamp: 0
+          timestamp: new Date(Date.now() - 5000)
         },
         {
           userID: 'Jane', 
@@ -36,7 +36,7 @@ function App() {
             text: 'message2 from jane', 
             attatchments: []
           },
-          timestamp: 1
+          timestamp: new Date(Date.now() - 500)
         }
     ],
   });
